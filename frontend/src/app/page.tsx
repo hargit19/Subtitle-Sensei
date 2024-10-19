@@ -1,4 +1,4 @@
-import SubtitleAnalyzer from './Subtitle-fix'
+import SubtitleAnalyzer from './subtitle-fix'
 
 export default function Home() {
   return (
