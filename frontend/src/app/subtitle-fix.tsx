@@ -40,7 +40,7 @@ const SubtitleAnalyzer: React.FC = () => {
     formData.append('file', file);
 
     try {
-      const response = await fetch('http://localhost:5000/api/analyze', {
+      const response = await fetch('https://subtitle-sensei-5.onrender.com/api/analyze', {
         method: 'POST',
         body: formData,
       });
@@ -70,7 +70,7 @@ const SubtitleAnalyzer: React.FC = () => {
     formData.append('file', selectedFile);
 
     try {
-      const response = await fetch('http://localhost:5000/api/fix', {
+      const response = await fetch('https://subtitle-sensei-5.onrender.com/api/fix', {
         method: 'POST',
         body: formData,
       });
