@@ -3,8 +3,9 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #ffffff; /* White background */
+  --foreground: #808080; /* Grey text */
+  --button-bg: #ffcccc;   /* Light red buttons */
 }
 
 @media (prefers-color-scheme: dark) {
@@ -18,6 +19,11 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+  background-color: var(--button-bg); /* Light red buttons */
+  color: var(--foreground); /* Button text should be grey */
 }
 
 @layer utilities {
